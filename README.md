@@ -1,5 +1,7 @@
 # Flatpak Spotify .desktop config file (Hyprland)
 
+this is a beta script.
+
 This file contains a solution for spotify x11/wayland on Hyprland 
 to be working with the Flatpak version. 
 
@@ -35,4 +37,21 @@ Feel free to change the title of your app to make it clearer.
 I used `Wspotify Wayland`.
  
 
+# What are the comamnds doing ? 
 
+- `flatpak run`: Executes an application installed via Flatpak.
+- `--branch=stable`: Uses the stable branch of the Flatpak application.
+- `--socket=wayland`: Connects the application to a Wayland compositor.
+- `--arch=x86_64`: Specifies the 64-bit architecture for compatibility.
+- `--command=/app/extra/bin/spotify`: Defines the path to the Spotify binary within the Flatpak sandbox.
+- `--file-forwarding com.spotify.Client`: Facilitates file forwarding to the Spotify client.
+- `--enable-gpu-rasterization`: Activates GPU rasterization for enhanced performance.
+- `--enable-zero-copy`: Enables zero-copy techniques to improve memory efficiency and reduce latency.
+- `--enable-gpu-compositing`: Uses GPU for compositing layers of the user interface.
+- `--enable-native-gpu-memory-buffers`: Utilizes native GPU memory buffers for better video memory management.
+- `--enable-oop-rasterization`: Activates out-of-process rasterization for improved performance and stability.
+- `--enable-features=UseSkiaRenderer`: Uses Skia for rendering, improving graphical quality and speed.
+- `--ozone-platform=wayland`: Sets Ozone to use Wayland as the backend.
+- `--disable-gpu-sandbox`: Disables GPU sandboxing, potentially improving performance but reducing security.
+- `--enable-features=UseSkiaRenderer,WaylandWindowDecorations`: Enables additional features, including Skia rendering and Wayland window decorations.
+- `@@u %U @@`: Placeholders for URL or file arguments passed to the application.
