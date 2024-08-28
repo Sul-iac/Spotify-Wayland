@@ -11,10 +11,10 @@ Wayland, as it uses x11 librairy. But there is some workarounds.
 First, make sure you downloaded the `flatpak` version using the flatpak command
 `flatpak install spotify`
 
-Mkae sure you download the `flathub` version
+Make sure you download the `flathub` version
 `Found ref ‘app/com.spotify.Client/x86_64/stable’ in remote ‘flathub’ (system).`
 
-And press Y.
+Press Y.
 
 Check if the flatpak version is installed using `flatpak list`. 
 
