@@ -1,7 +1,7 @@
 [Desktop Entry]
 Version=1.0
-Name=WSpotify
-Exec=flatpak run --branch=stable --socket=wayland --arch=x86_64 --command=/app/extra/bin/spotify --file-forwarding com.spotify.Client --enable-gpu-rasterization --ena>
+Name=WSpotify (Wayland Optimized)
+Exec=flatpak run --branch=stable --socket=wayland --arch=x86_64 --command=/app/extra/bin/spotify --file-forwarding com.spotify.Client --enable-gpu-rasterization --enable-zero-copy --enable-gpu-compositing --enable-native-gpu-memory-buffers --enable-oop-rasterization --enable-features=UseSkiaRenderer --ozone-platform=wayland --disable-gpu-sandbox '--enable-features=UseSkiaRenderer,WaylandWindowDecorations' @@u %U @@
 Icon=spotify-client
 Terminal=false
 Type=Application
